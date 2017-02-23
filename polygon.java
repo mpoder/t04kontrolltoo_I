@@ -17,4 +17,21 @@ public class polygon {
     public int askY(int number) {
       return y.get(number);
     }
+
+    public boolean isTriangle() {
+      if (x.size() == 3 && y.size() == 3) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+
+    public boolean isEquilateral() {
+      if (this.isTriangle()) {
+        return true;
+      } else {
+        return false;
+      }
+      
+    }
 }
