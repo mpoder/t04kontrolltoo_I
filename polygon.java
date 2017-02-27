@@ -37,14 +37,19 @@ public class polygon {
         double len1 = Math.round(Math.sqrt(calcx1+calcy1));
         double len2 = Math.round(Math.sqrt(calcx2+calcy2));
         double len3 = Math.round(Math.sqrt(calcx3+calcy3));
-        System.out.println("Debug: len1:" + len1);
+        /*System.out.println("Debug: len1:" + len1);
         System.out.println("Debug: len2:" + len2);
-        System.out.println("Debug: len3:" + len3);
+        System.out.println("Debug: len3:" + len3);*/
         if (len1 == len2 && len2 == len3) {
           return true;
       } else {
         return false;
       }
     } else {return false;}
-}
+    }
+
+    public boolean isGood() {
+      return false;
+    }
+
 }
